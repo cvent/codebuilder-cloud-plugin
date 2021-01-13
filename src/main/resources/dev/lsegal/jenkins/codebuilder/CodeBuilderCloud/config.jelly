@@ -34,6 +34,10 @@
       <f:textbox default="${descriptor.defaultJnlpImage}" />
     </f:entry>
 
+    <f:entry field="jnlpCommand" title="${%JNLP Docker Image Command}">
+      <f:textbox default="${descriptor.defaultJnlpCommand}" />
+    </f:entry>
+
     <f:entry field="agentTimeout" title="${%Agent Connection Timeout}">
       <f:number default="${descriptor.defaultAgentTimeout}" />
     </f:entry>

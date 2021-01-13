@@ -70,7 +70,7 @@ commands below:
 aws iam create-role \
   --role-name jenkins-default \
   --assume-role-policy-document \
-  '{"Version":"2012-10-17 ","Statement":[{"Effect": "Allow","Principal":{"Service":"codebuild.amazonaws.com"},"Action":"sts:AssumeRole"}]}'
+  '{"Version":"2012-10-17","Statement":[{"Effect": "Allow","Principal":{"Service":"codebuild.amazonaws.com"},"Action":"sts:AssumeRole"}]}'
 
 # Create the project named "jenkins-cluster" using our service role
 aws codebuild create-project \
