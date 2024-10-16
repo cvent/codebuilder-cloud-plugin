@@ -12,7 +12,7 @@
 
 FROM jenkins/jnlp-slave:latest as build
 
-FROM ubuntu:14.04.5
+FROM ubuntu:24.04
 
 ENV DOCKER_BUCKET="download.docker.com" \
     DOCKER_VERSION="17.09.0-ce" \
