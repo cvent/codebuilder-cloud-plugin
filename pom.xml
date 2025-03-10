@@ -76,7 +76,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>aws-credentials</artifactId>
-            <version>1.23</version>
+            <version>245.v8a_1b_7c11a_94d</version>
         </dependency>
     </dependencies>
 </project>
